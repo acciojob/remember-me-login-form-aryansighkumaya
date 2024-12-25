@@ -1,53 +1,39 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Login Form -->
-    <form id="login-form">
-      <h1>Login Form</h1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Login Form</title>
+</head>
+<body>
+  <h1>Login Form</h1>
+  
+  <!-- Login Form -->
+  <form id="login-form">
+    <!-- Username Field -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter your username" required />
+    <br><br>
+    
+    <!-- Password Field -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password" required />
+    <br><br>
+    
+    <!-- Remember Me Checkbox -->
+    <label for="checkbox">
+      <input type="checkbox" id="checkbox" /> Remember me
+    </label>
+    <br><br>
+    
+    <!-- Submit Button -->
+    <input type="submit" id="submit" value="Submit" />
+  </form>
 
-      <!-- Username Label and Input -->
-      <label for="username">Username</label>
-      <input
-        type="text"
-        id="username"
-        placeholder="Username"
-        required
-      />
+  <!-- Existing User Button -->
+  <button id="existing" style="display: none;">Login as existing user</button>
 
-      <!-- Password Label and Input -->
-      <label for="password">Password</label>
-      <input
-        type="password"
-        id="password"
-        placeholder="Password"
-        required
-      />
-
-      <!-- Remember Me Checkbox -->
-      <label for="checkbox">
-        <input
-          type="checkbox"
-          id="checkbox"
-        />
-        Remember me
-      </label>
-
-      <!-- Submit Button -->
-      <input
-        type="submit"
-        id="submit"
-        value="Submit"
-      />
-    </form>
-
-    <!-- Existing User Button -->
-    <div id="existing" style="display: none;">
-      <button id="existing">Login as existing user</button>
-    </div>
-
-    <script src="./script.js"></script>
-  </body>
+  <script type="text/javascript" src="./script.js"></script>
+</body>
 </html>
