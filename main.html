@@ -4,18 +4,43 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Login Form</h1>
-    <div id="login-form">
-      <input type="text" id="username" placeholder="Username" />
-      <input type="password" id="password" placeholder="Password" />
+    <!-- Login Form -->
+    <form id="login-form">
+      <h1>Login Form</h1>
+      <!-- Username Input -->
+      <input
+        type="text"
+        id="username"
+        placeholder="Username"
+        required
+      />
+      <!-- Password Input -->
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        required
+      />
+      <!-- Remember Me Checkbox -->
       <label>
-        <input type="checkbox" id="checkbox" /> Remember me
+        <input type="checkbox" id="checkbox" />
+        Remember me
       </label>
-      <button id="submit">Submit</button>
-    </div>
+      <!-- Submit Button -->
+      <input
+        type="submit"
+        id="submit"
+        value="Submit"
+      />
+    </form>
+
+    <!-- Existing User Button -->
     <div id="existing" style="display: none;">
-      <button id="login-existing">Login as existing user</button>
+      <button id="login-existing">
+        Login as existing user
+      </button>
     </div>
-    <script type="text/javascript" src="./script.js"></script>
+
+    <script src="./script.js"></script>
   </body>
 </html>
