@@ -7,25 +7,34 @@
     <!-- Login Form -->
     <form id="login-form">
       <h1>Login Form</h1>
-      <!-- Username Input -->
+
+      <!-- Username Label and Input -->
+      <label for="username">Username</label>
       <input
         type="text"
         id="username"
         placeholder="Username"
         required
       />
-      <!-- Password Input -->
+
+      <!-- Password Label and Input -->
+      <label for="password">Password</label>
       <input
         type="password"
         id="password"
         placeholder="Password"
         required
       />
+
       <!-- Remember Me Checkbox -->
-      <label>
-        <input type="checkbox" id="checkbox" />
+      <label for="checkbox">
+        <input
+          type="checkbox"
+          id="checkbox"
+        />
         Remember me
       </label>
+
       <!-- Submit Button -->
       <input
         type="submit"
@@ -36,9 +45,7 @@
 
     <!-- Existing User Button -->
     <div id="existing" style="display: none;">
-      <button id="login-existing">
-        Login as existing user
-      </button>
+      <button id="existing">Login as existing user</button>
     </div>
 
     <script src="./script.js"></script>
